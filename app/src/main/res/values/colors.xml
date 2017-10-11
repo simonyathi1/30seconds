@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#f7ba04</color>
+    <color name="progress_start">#269419</color>
+    <color name="progress_end">#ff0004</color>
+    <color name="blue_card_color">#00c8ff</color>
+    <color name="yellow_card_color">#f4e157</color>
+    <color name="blue_card_bar_color">#0098ea</color>
+    <color name="yellow_transparent">#58f4e157</color>
+    <color name="blue_transparent">#5100c8ff</color>
+    <color name="yellow_card_bar_color">#ffd900</color>
+    <color name="black">#f5454545</color>
+    <color name="grey">#f5eaeaea</color>
+    <color name="dark_blue">#2b385e</color>
+</resources>

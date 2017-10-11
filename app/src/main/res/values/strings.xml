@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">30 Seconds</string>
+    <string name="close_app">close app</string>
+    <string name="new_game">new game</string>
+    <string name="number_of_teams">Number of teams</string>
+    <string name="team_1">Team 1</string>
+    <string name="team_1_players">Team 1 Players</string>
+    <string name="team_name">team name</string>
+    <string name="number_of_players">how many</string>
+    <string name="team_3">Team 3</string>
+    <string name="team_3_players">Team 3 Players</string>
+    <string name="team_2">Team 2</string>
+    <string name="team_2_players">Team 2 Players</string>
+    <string name="team_4">Team 4</string>
+    <string name="team_4_players">Team 4 Players</string>
+    <string name="team_5">Team 5</string>
+    <string name="team_5_players">Team 5 Players</string>
+    <string name="start">start</string>
+    <string name="previous">previous</string>
+    <string name="done">done</string>
+    <string name="next">next</string>
+    <string name="board_size">Board Size</string>
+
+    <string-array name="game_sizes">
+        <item>SELECT BOARD SIZE</item>
+        <item>Small 40 blocks</item>
+        <item>Medium 55 blocks</item>
+        <item>Large 70 blocks</item>
+    </string-array>
+</resources>
