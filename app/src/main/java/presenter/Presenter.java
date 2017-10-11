@@ -92,7 +92,7 @@ public class Presenter implements GameContract.Actions {
                 String line;
                 try {
                     while ((line = buffreader.readLine()) != null)
-                        questionsList.add(line.toUpperCase());
+                        questionsList.add(customUpper(line));
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -103,4 +103,22 @@ public class Presenter implements GameContract.Actions {
         }
         return questionsList;
     }//done
+
+    private String customUpper(String line){
+        //this method leaves letters like c in McDONALDS small when changing to uppercase
+
+        StringBuilder newLine = new StringBuilder();
+        for (int i = 0; i < line.length();i++){
+            if (!String.valueOf(line.charAt(i)).equals("<")){
+                newLine.append(String.valueOf(line.charAt(i)).toUpperCase());
+            }
+            else {
+                newLine.append(String.valueOf(line.charAt(i+1)).toLowerCase());
+                i++;
+                continue;
+
+            }
+        }
+        return String.valueOf(newLine);
+    }
 }
