@@ -325,13 +325,16 @@
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:layout_gravity="bottom"
-            android:layout_marginEnd="30dp"
             android:layout_marginStart="10dp"
             android:background="@drawable/button_drawable"
             android:text="@string/start"
             android:textColor="@color/grey"
             android:textSize="6.5pt" />
-
+        <com.google.android.gms.ads.AdView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_toStartOf="@+id/game_size_spinner"
+            android:layout_toEndOf="@+id/btn_start" />
         <Spinner
             android:id="@+id/game_size_spinner"
             android:layout_width="160dp"

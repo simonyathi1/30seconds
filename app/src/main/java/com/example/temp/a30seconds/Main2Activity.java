@@ -64,11 +64,11 @@ public class Main2Activity extends AppCompatActivity implements AdapterView.OnIt
         tvNumPlayers4 = (TextView) findViewById(R.id.tv_number_of_players_4);
         tvNumPlayers5 = (TextView) findViewById(R.id.tv_number_of_players_5);
 
-        cvTeam1 = (CardView)findViewById(R.id.cv_team_1);
-        cvTeam2 = (CardView)findViewById(R.id.cv_team_2);
-        cvTeam3 = (CardView)findViewById(R.id.cv_team_3);
-        cvTeam4 = (CardView)findViewById(R.id.cv_team_4);
-        cvTeam5 = (CardView)findViewById(R.id.cv_team_5);
+        cvTeam1 = (CardView) findViewById(R.id.cv_team_1);
+        cvTeam2 = (CardView) findViewById(R.id.cv_team_2);
+        cvTeam3 = (CardView) findViewById(R.id.cv_team_3);
+        cvTeam4 = (CardView) findViewById(R.id.cv_team_4);
+        cvTeam5 = (CardView) findViewById(R.id.cv_team_5);
 
         next = (Button) findViewById(R.id.btn_start);
 
@@ -109,7 +109,6 @@ public class Main2Activity extends AppCompatActivity implements AdapterView.OnIt
         numPlayers3.setInputType(InputType.TYPE_CLASS_NUMBER);
         numPlayers4.setInputType(InputType.TYPE_CLASS_NUMBER);
         numPlayers5.setInputType(InputType.TYPE_CLASS_NUMBER);
-
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.include);
@@ -434,9 +433,7 @@ public class Main2Activity extends AppCompatActivity implements AdapterView.OnIt
                 }
             }
         });
-
     }
-
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
