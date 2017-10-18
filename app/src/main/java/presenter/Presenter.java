@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import model.Card;
 import model.DataProvider;
 import model.GameContract;
-import model.MyApp;
+
 
 /**
  * Created by temp on 02/10/2017.
@@ -73,25 +73,26 @@ public class Presenter implements GameContract.Actions {
         mView.showButtons();
     }
 
-    public void onResume(){
+    public void onResume() {
         mView.resumeTimer();
     }
-    public void onPause(){
+
+    public void onPause() {
         mView.pauseTimer();
     }
+
     private ArrayList<String> questionsFileReader() {
         ArrayList<String> questionsList = new ArrayList<>();
-
 
         try {
             InputStream inputStream = MainActivity.mainActivity.getResources().openRawResource(R.raw.questions_text);
 
             if (inputStream != null) {
-                InputStreamReader inputreader = new InputStreamReader(inputStream);
-                BufferedReader buffreader = new BufferedReader(inputreader);
+                InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+                BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
                 String line;
                 try {
-                    while ((line = buffreader.readLine()) != null)
+                    while ((line = bufferedReader.readLine()) != null)
                         questionsList.add(customUpper(line));
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -102,21 +103,19 @@ public class Presenter implements GameContract.Actions {
             error = e.getMessage();
         }
         return questionsList;
-    }//done
+    }
 
-    private String customUpper(String line){
+    private String customUpper(String line) {
         //this method leaves letters like c in McDONALDS small when changing to uppercase
 
         StringBuilder newLine = new StringBuilder();
-        for (int i = 0; i < line.length();i++){
-            if (!String.valueOf(line.charAt(i)).equals("<")){
+        for (int i = 0; i < line.length(); i++) {
+            if (!String.valueOf(line.charAt(i)).equals("<")) {
                 newLine.append(String.valueOf(line.charAt(i)).toUpperCase());
-            }
-            else {
-                newLine.append(String.valueOf(line.charAt(i+1)).toLowerCase());
+            } else {
+                newLine.append(String.valueOf(line.charAt(i + 1)).toLowerCase());
                 i++;
                 continue;
-
             }
         }
         return String.valueOf(newLine);
