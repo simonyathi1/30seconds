@@ -13,5 +13,6 @@
     <color name="yellow_card_bar_color">#ffd900</color>
     <color name="black">#f5454545</color>
     <color name="grey">#f5eaeaea</color>
+    <color name="white">#ffffff</color>
     <color name="dark_blue">#2b385e</color>
 </resources>

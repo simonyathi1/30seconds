@@ -1,13 +1,4 @@
-package model;
-
-import android.app.Activity;
-import android.content.Context;
-import android.media.MediaPlayer;
-import android.os.CountDownTimer;
-import android.view.View;
-
-import com.example.temp.a30seconds.MainActivity;
-import com.example.temp.a30seconds.R;
+package com.example.temp.a30seconds.model;
 
 /**
  * Created by temp on 21/09/2017.

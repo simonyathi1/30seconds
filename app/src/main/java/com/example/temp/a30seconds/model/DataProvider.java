@@ -1,4 +1,4 @@
-package model;
+package com.example.temp.a30seconds.model;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -11,29 +11,31 @@ import static android.text.TextUtils.isEmpty;
 
 public class DataProvider {
 
-    public ArrayList<Card> cards = new ArrayList();
-    String[] cardQuestions = new String[5];
+    private ArrayList<Card> cards = new ArrayList<>();
     private ArrayList<Team> teams;
 
     public DataProvider(ArrayList<String> al) {
         Collections.shuffle(al);
 
+        String[] cardQuestions = null;
         for (int i = 0; i < al.size(); i++) {
-
             if (i % 5 == 0) {
+                cardQuestions = new String[5];
                 cardQuestions[i % 5] = (al.get(i));
                 continue;
             }
             while (i % 5 != 0) {
-                cardQuestions[i % 5] = (al.get(i));
+                if (cardQuestions != null) {
+                    cardQuestions[i % 5] = (al.get(i));
+                }
                 i++;
             }
-            cards.add(new Card(cardQuestions[0], cardQuestions[1], cardQuestions[2], cardQuestions[3], cardQuestions[4]));
+            if (cardQuestions != null) {
+                cards.add(new Card(cardQuestions[0], cardQuestions[1], cardQuestions[2], cardQuestions[3], cardQuestions[4]));
+            }
             i--;
         }
-
         teams = new ArrayList<>();
-
     }
 
     public ArrayList<Card> getCards() {

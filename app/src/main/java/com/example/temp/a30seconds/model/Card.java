@@ -1,4 +1,4 @@
-package model;
+package com.example.temp.a30seconds.model;
 
 /**
  * Created by temp on 18/09/2017.

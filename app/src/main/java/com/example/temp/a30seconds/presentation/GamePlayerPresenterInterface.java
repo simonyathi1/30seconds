@@ -1,4 +1,7 @@
-package model;
+package com.example.temp.a30seconds.presentation;
+
+import com.example.temp.a30seconds.model.Card;
+import com.example.temp.a30seconds.model.DataProvider;
 
 import java.util.ArrayList;
 
@@ -6,7 +9,7 @@ import java.util.ArrayList;
  * Created by temp on 02/10/2017.
  */
 
-public interface GameContract {
+public interface GamePlayerPresenterInterface {
     interface View{
         void beforeNextTurn();
         void startTimer(int i);
@@ -27,14 +30,13 @@ public interface GameContract {
         void yesClickedOnBeforeNextDialog(ArrayList<Card>arrayList);
         void cancelClickedOnBeforeNextDialog();
         void scoreDisplayer();
-
     }
 
-    interface Actions{
         void onNextButtonClicked();
         void onDone();
         void onViewLoad();
         void onYesClickedOnBeforeNextDialog();
         void onCancelClickedOnBeforeNextDialog();
-    }
+
+        int nextTurn(int currentTeam, int numberOfTeams);
 }

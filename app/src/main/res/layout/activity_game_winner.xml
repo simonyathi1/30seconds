@@ -6,23 +6,25 @@
     android:layout_height="match_parent"
     android:background="@color/grey"
     android:orientation="vertical"
-    tools:context="com.example.temp.a30seconds.Winner">
+    tools:context="com.example.temp.a30seconds.presentation.GameWinnerActivity">
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="12dp"
         android:layout_centerInParent="true"
+        android:layout_margin="15dp"
         app:cardCornerRadius="12dp">
-    <TextView
-        android:id="@+id/tv_winner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:gravity="center"
-        android:padding="16dp"
-        android:textColor="@color/black"
-        android:textSize="16pt" />
+
+        <TextView
+            android:id="@+id/tv_winner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="16dp"
+            tools:text="Player 1 Wins!!"
+            android:textColor="@color/black"
+            android:textSize="10pt" />
     </android.support.v7.widget.CardView>
 
     <Button
@@ -30,10 +32,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="10dp"
-        android:textColor="@color/grey"
+        android:layout_margin="10dp"
         android:background="@drawable/button_drawable"
-        android:text="@string/close_app" />
+        android:text="@string/close_app"
+        android:textColor="@color/grey"/>
 
     <Button
         android:id="@+id/btn_new_game"
@@ -41,8 +43,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="10dp"
-        android:textColor="@color/grey"
+        android:layout_margin="10dp"
         android:background="@drawable/button_drawable"
-        android:text="@string/new_game" />
+        android:text="@string/new_game"
+        android:textColor="@color/grey"/>
 </RelativeLayout>

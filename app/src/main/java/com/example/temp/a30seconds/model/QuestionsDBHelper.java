@@ -1,4 +1,4 @@
-package model;
+package com.example.temp.a30seconds.model;
 
 import android.content.ContentValues;
 import android.content.Context;

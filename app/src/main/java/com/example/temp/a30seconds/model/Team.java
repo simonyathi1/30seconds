@@ -1,6 +1,4 @@
-package model;
-
-import android.content.Context;
+package com.example.temp.a30seconds.model;
 
 import java.util.ArrayList;
 
